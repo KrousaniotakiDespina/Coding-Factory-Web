@@ -1,0 +1,59 @@
+.container {
+  background-color: cornflowerblue;
+  width: 300px;
+  margin-left: 30%;
+  margin-right: auto;
+  box-sizing: border-box;
+  padding: 7px;
+}
+
+.login-container {
+  background-color: white;
+  width: 200px;
+  margin-left: 16%;
+  margin-right: auto;
+  padding-bottom: 40px;
+  padding-top: 1px;
+  box-sizing: border-box;
+  text-align: center;
+  color: gray;
+  border-radius: 5px;
+}
+
+[type='text'] {
+  background-color: rgb(238, 236, 234);
+  border-radius: 5px;
+  padding: 4%;
+  border: 0px;
+}
+
+[type='password'] {
+  background-color: rgb(238, 236, 234);
+  border-radius: 5px;
+  padding: 4%;
+  border: 0px;
+}
+
+#email {
+  margin-bottom: 10px;
+}
+
+[type='submit'] {
+  width: 88%;
+  color: white;
+  background-color: cornflowerblue;
+  border: 0px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding: 4%;
+}
+
+.lost-password {
+  color: gray;
+}
+
+.sign-up-letters {
+  color: white;
+  text-align: center;
+}

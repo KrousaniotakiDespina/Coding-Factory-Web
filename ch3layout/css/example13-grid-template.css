@@ -1,0 +1,31 @@
+.container-grid1 {
+  display: grid; /* διαφορα με το display flex ειανι οτι στον πατερα οριζουμε το μεγεθος που θελουμε να εχουν τα παιδια */
+
+  grid-template-columns: 1fr 2fr 1fr; /* οριζω το layout της σελιδας μου "παιρνω το πλατος της σελιδας *4 και το 1/4 παιρνει η πρωτη στηλη τα 2/4 η 2η και το 1/4 η 3η" */
+
+  /* OR */
+  /* grid-template-columns: 20% 60% 20%; */
+  /* OR px */
+  /* grid-auto-rows: auto;  Το υψος της καθε γραμμης θα ειναι το μεγεθος των περιεχομενων της (αυτονοητο αν δεν δηλωσουμε υψος) */
+}
+
+.container-grid2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 2fr;
+  grid-template-rows: 60px 120px;
+}
+
+.container-grid3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr) 2fr; /* 1fr 1fr 1fr 2fr */
+  grid-template-rows: 100px;
+  grid-auto-rows: 50px;
+}
+
+div[class^="grid"] {
+  border: 1px solid red;
+}
+
+div[class^="container"] {
+  margin-top: 20px;
+}

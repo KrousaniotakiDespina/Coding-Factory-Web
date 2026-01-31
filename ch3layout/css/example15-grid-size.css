@@ -1,0 +1,28 @@
+.container {
+  display: grid; /* τα παιδια κληρονομουνε την ιδιοτητα του grid */
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+}
+
+div[class^="grid"] {
+  border: 1px solid black;
+}
+
+.grid-item1 {
+  background-color: green;
+  grid-column-start: 1; /* ξεκιναει στην στηλη ενα */
+  grid-column-end: span 2; /* λαμβανει χωρο 2 στηλων */
+}
+
+/* .grid-item1 {
+  background-color: green;
+  grid-column-start: 1;
+  grid-column-end: 3; Να τελειωνεις πριν την στηλη 3
+} 
+
+OR
+
+ .grid-item1 {
+  background-color: green;
+  grid-column-start: 1/3; /* ξεκινα απο την πρωτη στηλη και πριν απο την τριτη σταματα 
+} */

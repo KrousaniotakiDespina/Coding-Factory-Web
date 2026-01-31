@@ -1,0 +1,55 @@
+.container {
+  /* position: relative;  εαν ο πατερας εχει "position: relativε" τοτε το παιδι θα ενταχθει στις συυγκεκριμενες διαστασεις μεσα στο relative, αλλιως θα θεωρησει relative τον browser */
+  width: 800px;
+  height: 400px;
+  background-color: lightblue;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  display: flex;
+  
+  justify-content: space-around; /* οριζοντια στοιχηση και μοιρασμενο υπολοιπο σε καθε κουτι */
+  align-items: center; /* τα στοιχιζει στο κεντρο */
+}
+
+.box1 {
+  border: 1px solid black;
+  padding: 80px;
+  background-color: aqua;
+}
+
+.box2 {
+  border: 1px solid black;
+  padding: 80px;
+  background-color: brown;
+}
+
+.box3 {
+  border: 1px solid black;
+  padding: 80px;
+  background-color: green;
+}
+
+.item-relative {
+  /* σε σχεση με την αρχικη θεση θα τοποθετηθεις σε μια αλλη θεση αναλογα με τι εχω ορισει */
+  position: relative; 
+  top: -25px;
+  left: 25px;
+}
+
+.item-absolute {
+  /* εαν στον πατερα δεν εχω ορισει position: relative τοτε θα τοποθετηθω αναλογα τον browser αλλιως αναλογα με τον πατερα*/
+  position: absolute; /* παραμενει πανω οταν κανω σκρολ*/
+  top: 0;
+  left: 0;
+}
+
+.item-fixed {
+  position: fixed; /* Παραμενει και εμφανιζεται οταν κανω σκρολ το μπραουζερ (usage: on a menu) */
+  top: 10px;
+  left: 10px;
+  background-color: red;
+}
+
+.z-front {
+  z-index: 1; /* οριζουμε ενα αντικειμενο που εχει κρυφτει να ερθει στο προσκηνιο */
+}

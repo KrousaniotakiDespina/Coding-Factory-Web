@@ -1,0 +1,23 @@
+.text-blue {
+  color: cornflowerblue;
+  margin-bottom: 5px;
+}
+
+.container {
+  border-bottom: 1px solid cornflowerblue;
+}
+
+.text-teacher {
+  color: gray;
+}
+
+.container-2 {
+  border: 5px solid purple;
+  box-sizing: border-box;
+  display: inline-block;
+  background-color: gainsboro;
+}
+
+.container-2 a {
+  color: orange;
+}
